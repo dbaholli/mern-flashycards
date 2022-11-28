@@ -39,14 +39,14 @@ const Deck = () => {
   return (
     <div className='sagecard-main'>
       <form onSubmit={handleCreateCard} className='form-container'>
-        <h1>{deck?.title}</h1>
+        <h1 className="decktitle">{deck?.title}</h1>
         <input
           id='deck-title'
           onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
             setText(e.target.value);
           }}
         />
-        <button className='hover-button'>Create</button>
+        <button className='hover-button'>CREATE</button>
       </form>
       <div className='decks-container'>
         {cards.map((card, index) => (

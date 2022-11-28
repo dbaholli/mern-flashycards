@@ -3,21 +3,26 @@
   flex-direction: column;
   margin: 10% auto;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  .decktitle {
+    text-align: center;
+  }
   .form-container {
     display: flex;
     flex-direction: column;
     gap: 15px;
     label {
       font-size: max(1.5rem, 2.1vw);
-      font-weight: 600;
     }
+  }
+  h1 {
+    margin: 2.5% 0;
   }
   .decks-container {
     display: grid;
     text-align: center;
     width: 600px;
-    margin: 0 auto;
+    margin: 5% auto;
     grid-gap: 10px;
     grid-template-columns: repeat(3, 1fr);
     li {
@@ -29,6 +34,10 @@
       background: white;
       border: 1px solid rgb(66, 63, 63);
       border-radius: 12px;
+      a {
+        color: #000;
+        font-weight: bold;
+      }
     }
   }
 }

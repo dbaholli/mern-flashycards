@@ -40,16 +40,15 @@ const Home = () => {
             setTitle(e.target.value);
           }}
         />
-        <button className='hover-button'>Create</button>
+        <button className='hover-button'>CREATE</button>
       </form>
-      <br />
-      <h1>Your decks: </h1>
+      <h1>your decks</h1>
       <div className='decks-container'>
         {decks.map((deck) => (
           <li key={deck._id}>
             <button
               className='hover-button'
-              onClick={() => deleteDeck(deck._id)}
+              onClick={() => handleDeleteDeck(deck._id)}
             >
               DELETE
             </button>
