@@ -1,2 +1,2 @@
-# mern-sagecards
-MERN react/typescript node/express mongodb
+# fullstack mern project
+react/typescript node/express mongodb
