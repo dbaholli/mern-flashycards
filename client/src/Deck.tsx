@@ -38,9 +38,8 @@ const Deck = () => {
 
   return (
     <div className='sagecard-main'>
-      Card Form
       <form onSubmit={handleCreateCard} className='form-container'>
-        <label htmlFor='deck-title'>Card Title</label>
+        <h1>{deck?.title}</h1>
         <input
           id='deck-title'
           onChange={(e: React.ChangeEvent<HTMLInputElement>) => {

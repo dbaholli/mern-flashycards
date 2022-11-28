@@ -1,0 +1,18 @@
+.header {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    padding: 25px;
+    width: 100%;
+    margin-top: 0;
+    .header-items {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 50px;
+        .header-item {
+            cursor: pointer;
+            font-size: max(1rem, 1.5vw);
+            
+        }
+    }
+}
